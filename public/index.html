@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>TODO supply a title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="../main.js"></script>
+    <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="shortcut icon" type="image/png" href="../img/iphone.png" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row" style="margin-top: 50px;">
+            <div class="col-6">
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Establecimiento: </label>
+                        <input type="text" class="form-control" id="establishment" aria-describedby="establishmentS" value="1">
+                        <small id="establishmentS" class="form-text text-muted">Se muestra la conexión del establecimiento</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Conexión: </label>
+                        <input type="text" class="form-control" id="connectionEst" aria-describedby="connectionEst" readonly>
+                        <small id="connectionEst" class="form-text text-muted">Se muestra la conexión del establecimiento</small>
+                    </div>
+                </form>
+            </div>
+            <div class="col-6">
+                <button type="button" class="btn btn-success btn-switch" id="btnOn">Conectar</button>
+                <button type="button" class="btn btn-danger btn-switch" id="btnOff" style="display:none;">Desconectar</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <button type="button" class="btn btn-success btn-service" id="btnAllow" style="display:none;">Aceptar</button>
+                <button type="button" class="btn btn-primary btn-service" id="btnReject" style="display:none;">Rechazar</button>
+            </div>
+            <div class="col-6"></div>
+        </div>
+    </div>
+</body>
+
+</html>
