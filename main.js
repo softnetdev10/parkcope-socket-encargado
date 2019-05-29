@@ -78,9 +78,6 @@ $(document).ready(function() {
             }
         };
 
-
-        connection.setTimeout(10000);
-
     });
     $('#btnOff').on('click', function() {
         $(this).css('display', 'none');
